@@ -1,0 +1,193 @@
+.button-thumbnail {
+	/* border: none;
+  width: 100%;
+  background-color: #32917B;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+	padding: 20px 100px;
+  text-decoration: none; */
+  display: none
+}
+
+.button-thumbnail:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.cart {
+	/** Default cart to hidden */
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.cart img {
+	max-width: 20%;
+	max-height: 80%;
+}
+
+.cart:target {
+	outline: none;
+	display: block;
+}
+
+#content {
+	background-color: #ffffff;
+  width: 550px;
+  height: 100vh;
+	padding: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+
+div#btn-finalizar {
+	margin-top: 50px;
+}
+
+div#btn-finalizar a {
+	border: none;
+  width: 100%;
+  background-color: #32917B;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+	padding: 20px 30px;
+	text-decoration: none;
+}
+
+div#btn-finalizar a:hover {
+	text-decoration: underline;
+}
+
+/* Estilização de cada item da sacola */
+#blockTop {
+  border-bottom: 1px solid #E3E3E3;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 10px;
+}
+#blockTop h2 {
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #DE8F75;
+  margin-top: 20px;
+}
+
+#blockTop p {
+  color: #AEB6C1;
+  font-size: 18px;
+  line-height: 0;
+}
+
+div#items {
+  overflow: auto;
+  height: 50vh;
+}
+
+div.blockItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+div.blockItem h3 {
+  color: #202020;
+  font-size: 14px;
+}
+
+div.blockItem p {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+div.blockItem div.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.blockItem div.number span {
+  color: #5F75AA;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+div#frete {
+  background-color: #AEB6C1;
+  color: white;
+  margin-top: 50px;
+  font-size: 14px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#frete p {
+  margin: 0;
+}
+
+div#frete span {
+  font-weight: bold;
+}
+
+div#total {
+  background: #E3E3E3;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 100%;
+  text-align: left;
+}
+
+div#total p.value {
+  color: #202020;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  margin-top: 40px;
+}
+
+div#total p.parcela {
+  color: #000000;
+  font-size: 12px;
+  margin: 0;
+}
+
+
+
+/* Estilização da barra de rolagem */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #E2E2E2;
+}
+::-webkit-scrollbar-thumb {
+  background: #DE8F75;
+  border-radius: 5px
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
